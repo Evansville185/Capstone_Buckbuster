@@ -57,7 +57,7 @@ usersRouter.post("/register", async (req, res, next) => {
         password,
         name,
         email,
-        admin: false,
+        admin: true,
       });
       console.log("user", user);
       if (user) {
